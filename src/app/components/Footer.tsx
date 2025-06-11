@@ -14,7 +14,7 @@ export default function Footer() {
           <Link href="/privacy-policy" className="hover:underline">
             นโยบายความเป็นส่วนตัว
           </Link>
-          <Link href="/contact-us" className="hover:underline">
+          <Link href="/about-contact-us" className="hover:underline">
             ติดต่อเรา
           </Link>
           <Link href="/blog" className="hover:underline">
