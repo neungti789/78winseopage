@@ -14,7 +14,7 @@ export default function Floating() {
             <button onClick={() => {
                 const randomUrl = domains[Math.floor(Math.random() * domains.length)];
                 window.location.href = randomUrl;
-            }} className="w-1/2 bg-[#1e6bf0] text-white font-bold py-3 hover:bg-[#1657c8] transition">
+            }} className="w-1/2 bg-[#1e6bf0] text-white font-bold py-3 hover:bg-[#1657c8] transition cursor-pointer">
                 เข้าสู่ระบบ
             </button>
         </div>
