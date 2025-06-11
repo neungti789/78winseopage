@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://781248555.com
+
+# Sitemaps
+Sitemap: https://781248555.com/sitemap.xml
