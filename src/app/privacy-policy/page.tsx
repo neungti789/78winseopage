@@ -61,7 +61,7 @@ export default async function PrivacyPolicyPage() {
                         <h2 className="text-xl font-semibold text-red-600">ติดต่อเรา</h2>
                         <p>
                             หากท่านมีข้อสงสัยเพิ่มเติมเกี่ยวกับนโยบายความเป็นส่วนตัว หรือข้อเสนอแนะในการพัฒนาเว็บไซต์
-                            สามารถติดต่อเราได้ผ่าน <a href="/contact-us" className="text-blue-600 underline">หน้าติดต่อเรา</a>
+                            สามารถติดต่อเราได้ผ่าน <a href="/about-contact-us" className="text-blue-600 underline">หน้าติดต่อเรา</a>
                         </p>
 
                         <p className="text-center text-blue-700 font-semibold text-lg mt-6">
