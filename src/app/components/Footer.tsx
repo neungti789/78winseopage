@@ -9,7 +9,7 @@ export default function Footer() {
         {/* เมนูด้านบนโลโก้ */}
         <nav className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm font-medium text-center">
           <Link href="/" className="hover:underline">
-            สล็อตเว็บตรง
+            หน้าแรก
           </Link>
           <Link href="/privacy-policy" className="hover:underline">
             นโยบายความเป็นส่วนตัว

@@ -32,7 +32,7 @@ export default function Header() {
 
                 {/* Desktop Menu */}
                 <nav className="hidden md:flex items-center gap-6 text-sm">
-                    <Link href="/" className="hover:underline">สล็อตเว็บตรง</Link>
+                    <Link href="/" className="hover:underline">หน้าแรก</Link>
                     <Link href="/sitemap.xml" className="hover:underline">Sitemap</Link>
                     <button
                         onClick={() => {
