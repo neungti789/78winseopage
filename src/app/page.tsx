@@ -7,11 +7,6 @@ import Header from "./components/Header";
 
 //export const dynamic = 'force-dynamic';
 
-export const metadata = {
-  title: "โปรฝาก 100% รับเพิ่ม 100%",
-  description: "โปรโมชั่นใหม่! ฝากครั้งแรก รับเครดิตเพิ่มเท่าตัว สมัครเลยก่อนหมดโปร!",
-};
-
 export default async function Home() {
   return (<>
     <Header />

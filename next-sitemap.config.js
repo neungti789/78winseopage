@@ -13,7 +13,7 @@ module.exports = {
         priority: 0.5,
       },
       {
-        loc: "/contact-us",
+        loc: "/about-contact-us",
         changefreq: "yearly",
         priority: 0.6,
       },

@@ -1,6 +1,6 @@
 export const meta = {
   metadataBase: new URL("https://781248555.com"),
-  authors: [{ name: "78WIN SEO Team", url: "https://781248555.com/about" }],
+  authors: [{ name: "78WIN SEO Team", url: "https://781248555.com/about-contact-us" }],
   title: {
     default: "78WIN – บริการความบันเทิงออนไลน์แบบมืออาชีพ",
     template: "%s | 78WIN",
