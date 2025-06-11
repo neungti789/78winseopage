@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { meta } from "./info/info";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,6 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = meta;
 
+export const dynamic = 'force-dynamic';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -24,8 +27,27 @@ export default function RootLayout({
     <html lang="th">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* ✅ Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SWCBL8WD35"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SWCBL8WD35');
+          `}
+        </Script>
+
+        {/* ✅ JSON-LD Structured Data */}
+        <Script
+          id="ld-json"
           type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
@@ -33,12 +55,13 @@ export default function RootLayout({
               "name": "78WIN",
               "url": "https://787888j.com",
               "logo": "https://787888j.com/78win-icon-48x48.ico",
-              "sameAs": []
+              "sameAs": [
+                "https://line.me/R/ti/p/@78win",
+              ],
             }),
           }}
         />
-      </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+
         {children}
       </body>
     </html>

@@ -1,11 +1,12 @@
 // src/app/page.tsx หรือ app/page.tsx
+export const runtime = 'edge';
 import Image from "next/image";
 import FAQsSection from "./components/FAQsSection";
 import Floating from "./components/floating";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
-//export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   return (<>

@@ -1,4 +1,5 @@
 // src/app/page.tsx หรือ app/contact-us/page.tsx
+export const runtime = 'edge';
 import Image from "next/image";
 import Floating from "../components/floating";
 import Footer from "../components/Footer";

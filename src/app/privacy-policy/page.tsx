@@ -1,5 +1,5 @@
 // src/app/page.tsx หรือ app/page.tsx
-
+export const runtime = 'edge';
 import Floating from "../components/floating";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
